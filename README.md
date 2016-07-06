@@ -32,13 +32,13 @@ This command replace your dotfiles in home directory.
 
 ## Tools list
 
-  * vim
+  * [vim](#vim)
   * tmux
   * GNU screen
   * zsh
   * bash
 
-# VIM
+## VIM
 
 We use vim as text editor for all our projects. Vim use
 [janus](https://github.com/carlhuda/janus) to be in sync with all
