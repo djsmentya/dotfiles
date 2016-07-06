@@ -38,3 +38,19 @@ This command replace your dotfiles in home directory.
   * zsh
   * bash
 
+# VIM
+
+We use vim as text editor for all our projects. Vim use
+[janus](https://github.com/carlhuda/janus) to be in sync with all
+plugins and updates.
+
+We defined few custome key maps in [vimrc.after](vimrc.after)
+
+
+keys         | functions                               | remember phrase
+-------------|-----------------------------------------|-------------------------
+`<leader>h`  | toggle line and culmn cursor highlight  |highlight
+`<leader>hl` | toggle line cursor highlight            |highlight line
+`<leader>hc` | toggle column cursor highlight          |highlight column
+`<leader>rct`| update ctags                            |refresh c tags
+

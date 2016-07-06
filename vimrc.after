@@ -1,0 +1,48 @@
+"" setup colorscheme
+set t_Co=256
+color railscasts
+set background=dark
+
+"" toggle cursor line and column
+
+" set cursor colors
+highlight CursorLine ctermbg=DarkGrey
+highlight CursorColumn ctermbg=DarkGrey
+
+" map line and column cursor
+:nnoremap <Leader>h :set cursorline! cursorcolumn!<CR>
+:nnoremap <Leader>hl :set cursorline!<CR>
+:nnoremap <Leader>hc :set cursorcolumn!<CR>
+
+
+"refresh tags for current project and gems
+map <silent><Leader>rct :!ctags -R `bundle show rails`/../* *<CR><CR>
+
+
+"" TODO remove code bellow or uncomment. I have no idea what this code for
+"" but it was in old config file vimrc.after.
+
+
+":nmap <Leader>b :BuffergatorToggle <Enter>
+"set hidden
+"runtime macros/matchit.vim
+
+""tabular trick"
+"inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
+
+"function! s:align()
+  "let p = '^\s*|\s.*\s|\s*$'
+  "if exists(':Tabularize') && getline('.') =~# '^\s*|' && (getline(line('.')-1) =~# p || getline(line('.')+1) =~# p)
+    "let column = strlen(substitute(getline('.')[0:col('.')],'[^|]','','g'))
+    "let position = strlen(matchstr(getline('.')[0:col('.')],'.*|\s*\zs.*'))
+    "Tabularize/|/l1
+    "normal! 0
+    "call search(repeat('[^|]*|',column).'\s\{-\}'.repeat('.',position),'ce',line('.'))
+  "endif
+"endfunction
+
+"let g:vroom_cucumber_path = 'cucumber'
+
+
+"set foldmethod=manual
+"call matchadd("ErrorMsg", "\\%>79v.\\+", 10, 4)
