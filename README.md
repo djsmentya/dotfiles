@@ -1,4 +1,40 @@
-# dotfiles
-dotfiles config
+# Dotfiles by logicalgroove
+The main goal of this project iteratively learn new cool features through
+all our team.
 
-Checkout [Wiki](https://github.com/djsmentya/dotfiles/wiki) for details.
+This repository contain dotfiles configurations for development server
+and documentation of commands, aliases, vim plugins, git that used by the
+team etc.
+## Instalation
+
+To manage dotfiles we use [rcm](https://github.com/thoughtbot/rcm). This tool
+replace files that started with dots in home directory with links to dotfile dir.
+Take a look of [Upcase](https://thoughtbot.com/upcase/videos/manage-and-share-your-dotfiles-with-rcm)
+to see how it works or other resource aboit rcm. Also you can take a look for a greate
+example of configurations in [thoughtbot/dotfiles](https://github.com/thoughtbot/dotfiles) repository.
+
+First install rcm.
+
+    sudo add-apt-repository ppa:martin-frost/thoughtbot-rcm
+    sudo apt-get update
+    sudo apt-get install rcm
+
+Clone to you $HOME directory.
+
+    git clone https://github.com/djsmentya/dotfiles.git ~/dotfiles
+
+Install dotfiles
+
+    env RCRC=$HOME/dotfiles/rcrc rcup
+
+This command replace your dotfiles in home directory.
+
+
+## Tools list
+
+  * vim
+  * tmux
+  * GNU screen
+  * zsh
+  * bash
+
