@@ -1,4 +1,4 @@
-# Dotfiles by logicalgroove
+# Dotfiles
 The main goal of this project iteratively learn new cool features through
 all our team.
 
