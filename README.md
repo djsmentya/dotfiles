@@ -10,7 +10,7 @@ team etc.
 To manage dotfiles we use [rcm](https://github.com/thoughtbot/rcm). This tool
 replace files that started with dots in home directory with links to dotfile dir.
 Take a look of [Upcase](https://thoughtbot.com/upcase/videos/manage-and-share-your-dotfiles-with-rcm)
-to see how it works or other resource aboit rcm. Also you can take a look for a greate
+video to see how it works or other resource about rcm. Also you can take a look for a greate
 example of configurations in [thoughtbot/dotfiles](https://github.com/thoughtbot/dotfiles) repository.
 
 First install rcm.
