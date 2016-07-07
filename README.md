@@ -21,11 +21,11 @@ First install rcm.
 
 Clone to you $HOME directory.
 
-    git clone https://github.com/djsmentya/dotfiles.git ~/dotfiles
+    git clone https://github.com/djsmentya/dotfiles.git ~/.dotfiles
 
 Install dotfiles
 
-    env RCRC=$HOME/dotfiles/rcrc rcup
+    env RCRC=$HOME/.dotfiles/rcrc rcup
 
 This command replace your dotfiles in home directory.
 
