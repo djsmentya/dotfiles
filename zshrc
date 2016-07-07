@@ -83,3 +83,17 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export PATH="/usr/local/sbin:$PATH"
+
+if [ -f ~/.bash_aliases ]; then
+      . ~/.bash_aliases
+fi
+
+google() {
+  if [ $2 ] ; then
+    grep --exclude="tags" -rn $1 $2
+  else
+    grep --exclude="tags" -rn $1 '.'
+  fi
+}
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
