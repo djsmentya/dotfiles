@@ -18,31 +18,6 @@ highlight CursorColumn ctermbg=DarkGrey
 "refresh tags for current project and gems
 map <silent><Leader>rct :!ctags -R `bundle show rails`/../* *<CR><CR>
 
+"" Ignore files in .gitignore for current dir in CtrlP plugin
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 
-"" TODO remove code bellow or uncomment. I have no idea what this code for
-"" but it was in old config file vimrc.after.
-
-
-":nmap <Leader>b :BuffergatorToggle <Enter>
-"set hidden
-"runtime macros/matchit.vim
-
-""tabular trick"
-"inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
-
-"function! s:align()
-  "let p = '^\s*|\s.*\s|\s*$'
-  "if exists(':Tabularize') && getline('.') =~# '^\s*|' && (getline(line('.')-1) =~# p || getline(line('.')+1) =~# p)
-    "let column = strlen(substitute(getline('.')[0:col('.')],'[^|]','','g'))
-    "let position = strlen(matchstr(getline('.')[0:col('.')],'.*|\s*\zs.*'))
-    "Tabularize/|/l1
-    "normal! 0
-    "call search(repeat('[^|]*|',column).'\s\{-\}'.repeat('.',position),'ce',line('.'))
-  "endif
-"endfunction
-
-"let g:vroom_cucumber_path = 'cucumber'
-
-
-"set foldmethod=manual
-"call matchadd("ErrorMsg", "\\%>79v.\\+", 10, 4)
