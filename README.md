@@ -1,4 +1,4 @@
-# Dotfiles by logicalgroove
+# Dotfiles
 The main goal of this project iteratively learn new cool features through
 all our team.
 
@@ -10,7 +10,7 @@ team etc.
 To manage dotfiles we use [rcm](https://github.com/thoughtbot/rcm). This tool
 replace files that started with dots in home directory with links to dotfile dir.
 Take a look of [Upcase](https://thoughtbot.com/upcase/videos/manage-and-share-your-dotfiles-with-rcm)
-to see how it works or other resource aboit rcm. Also you can take a look for a greate
+video to see how it works or other resource about rcm. Also you can take a look for a greate
 example of configurations in [thoughtbot/dotfiles](https://github.com/thoughtbot/dotfiles) repository.
 
 First install rcm.
@@ -21,11 +21,11 @@ First install rcm.
 
 Clone to you $HOME directory.
 
-    git clone https://github.com/djsmentya/dotfiles.git ~/dotfiles
+    git clone https://github.com/djsmentya/dotfiles.git ~/.dotfiles
 
 Install dotfiles
 
-    env RCRC=$HOME/dotfiles/rcrc rcup
+    env RCRC=$HOME/.dotfiles/rcrc rcup
 
 This command replace your dotfiles in home directory.
 
