@@ -1,0 +1,2 @@
+call janus#disable_plugin('ack', "We prefer google in shell. check ~/.dotfiles")
+call janus#disable_plugin('zoomwin', "Now body use id and it has bugs in our instance")
