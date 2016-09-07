@@ -1,10 +1,10 @@
-sudo add-apt-repository ppa:martin-frost/thoughtbot-rcm
+sudo add-apt-repository -y ppa:martin-frost/thoughtbot-rcm
 sudo apt-get update
-sudo apt-get install -y zsh git vim ctags curl rcm
+sudo apt-get install -y zsh git vim exuberant-ctags curl rcm
 
 # Install rvm
 gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
-\curl -sSL https://get.rvm.io | bash -s stable --ruby
+curl -sSL https://raw.githubusercontent.com/wayneeseguin/rvm/master/binscripts/rvm-installer | bash -s stable --ruby
 source /etc/profile.d/rvm.sh
 
 # Install vim janus
