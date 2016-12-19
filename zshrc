@@ -49,7 +49,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(tmux)
+plugins=(tmux git)
 
 # User configuration
 
@@ -88,6 +88,8 @@ if [ -f ~/.bash_aliases ]; then
       . ~/.bash_aliases
 fi
 
+. ~/.dotfiles/aliases/git
+
 google() {
   if [ $2 ] ; then
     grep --exclude="tags" -rn $1 $2
@@ -97,3 +99,5 @@ google() {
 }
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
